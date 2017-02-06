@@ -1,21 +1,4 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @siddharthdivi
- Watch 0
-  Star 0
-  Fork 689 siddharthdivi/imad-app-v2
-forked from hasura-imad/imad-app-v2
- Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
-Branch: master Find file Copy pathimad-app-v2/server.js
-0118d03  18 minutes ago
-@siddharthdivi siddharthdivi [imad-console] Updates server.js
-2 contributors @siddharthdivi @shahidhk
-RawBlameHistory     
-92 lines (79 sloc)  3.27 KB
+
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
