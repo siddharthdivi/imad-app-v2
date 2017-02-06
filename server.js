@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @siddharthdivi
+ Watch 0
+  Star 0
+  Fork 689 siddharthdivi/imad-app-v2
+forked from hasura-imad/imad-app-v2
+ Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Branch: master Find file Copy pathimad-app-v2/server.js
+0118d03  18 minutes ago
+@siddharthdivi siddharthdivi [imad-console] Updates server.js
+2 contributors @siddharthdivi @shahidhk
+RawBlameHistory     
+92 lines (79 sloc)  3.27 KB
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -59,33 +77,28 @@ function createTemplate (data) {
      `;
      return htmlTemplate;
 }
-            `
+            
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
-
 app.get('/article-one', function (req, res) {
   res.send(createTemplate(articleOne));
 });
-
 app.get('/article-two', function (req, res) { 
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
-
 app.get('/article-three', function (req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
-
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
-
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
 app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
