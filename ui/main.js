@@ -1,16 +1,15 @@
-console.log('Loaded!');
+//Counter code
+var button = document.getElementbyId('counter');
+var counter = 0;
 
-// change the text of the main-text div
-var element = document.getElementById('main-text');
-element.innerHTML = "Testing";
-
-// Move the image
-var img = document.getElementById('madi');
-var marginLeft=0;
-function moveRight() {
- marginleft = marginLeft + 50;
- img.style.marginLeft = marginLeft + 'px';
-}
-img.onclick = function() {
-   var interval =  setInterval(moveRight,100);
+button.onclick() = function() {
+    
+ //Make a request to the counter endpoint
+ 
+ //Capture the response and store it in a variable.
+ 
+ //Render the variable in the correct span.
+ counter = counter + 1;
+ var span = document.getElementbyId(''counter');
+ span.innerHTML = counter.toString();
 }
