@@ -16,5 +16,9 @@ button.onclick = function() {
              span.innerHTML = counter.toString();
          }
      }
- } 
+ };
+ 
+ //Make the request
+ request.open('GET','http://siddharthdivi.imad.hasura-app.io/counter',true);
+ request.send(null);
 };
